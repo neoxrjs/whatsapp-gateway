@@ -28,10 +28,12 @@
       "@adiwajshing/keyed-db": "^0.2.4",
       "@colors/colors": "^1.6.0",
       "@database/mongo": "github:neoxr/database#mongo",
+      "@database/postgres": "github:neoxr/database#postgresql",
       "@database/sqlite": "github:neoxr/database#sqlite",
       "@neoxr/baileys": "^8.2.2",
       "@neoxr/wb": "^5.9.1",
       "@session/mongo": "github:neoxr/session#mongo",
+      "@session/postgres": "github:neoxr/session#postgresql",
       "@session/sqlite": "github:neoxr/session#sqlite",
       "cfonts": "3.1.1"
    }
