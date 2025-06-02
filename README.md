@@ -12,7 +12,6 @@ The `config.json` file contains essential settings for your WhatsApp Gateway, in
 | `number`  | `number`   | The WhatsApp bot's phone number in international format                 |
 | `version` | `number[]` | Array representing the client version info for pairing                  |
 
-
 ## ⚙️ Apache2 Virtual Host Setup with `setup.sh`
 
 This project includes a shell script (`setup.sh`) that automates the configuration of an Apache virtual host for your domain.
@@ -48,7 +47,32 @@ The script will:
 
 ## MESSAGING API
 
-> Below are the currently supported messaging API endpoints available for use.
+Below are the currently supported messaging API endpoints available for use.
+
+To access these endpoints, an `x-neoxr-token` is required for authentication.  
+You can obtain your token by sending the command `.token` to your connected WhatsApp number.
+
+The bot will respond with a unique token that you can include in your request headers like this:
+
+
+```Javascript
+const axios = require('axios')
+
+(async () => {
+  const json = await (await axios.post('http://your-domain.com/v1/text', {
+    number: 62850000000,
+    text: 'Hi there!'
+  }, {
+    headers: {
+      'x-neoxr-token': '28ae8wxxxxxxxxxxxxx'
+    }
+  })).data
+  console.log(json)
+})()
+```
+
+> [!WARNING]
+> Keep your token secure. Treat it like a password and avoid exposing it publicly or in client-side code.
 
 ### SEND TEXT MESSAGE
 
