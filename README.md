@@ -8,7 +8,7 @@ The `config.json` file contains essential settings for your WhatsApp Gateway, in
 
 | Field     | Type       | Description                                                             |
 | --------- | ---------- | ----------------------------------------------------------------------- |
-| `state`   | `boolean`  | Indicates whether pairing mode is active (`true`) or inactive (`false`) |
+| `state`   | `boolean`  | Indicates whether pairing mode is active (`true`) or QR (`false`) |
 | `number`  | `number`   | The WhatsApp bot's phone number in international format                 |
 | `version` | `number[]` | Array representing the client version info for pairing                  |
 
@@ -34,8 +34,8 @@ The script will:
 
 ### 🚀 Usage Instructions
 
-1. Edit the `setup.sh` file and replace the placeholder domain (e.g., `your-domain.com`) with your actual domain name.
-2. Run the script using `sudo` to allow changes to Apache configuration.
+1. Edit the `whatsapp.conf` file and replace the placeholder domain (e.g., `your-domain.com`) with your actual domain name.
+2. Run `setup.sh` script using `bash setup.sh` to allow changes to Apache configuration.
 3. The script will automatically enable the new site and reload Apache.
 4. Ensure your DNS is correctly pointed to your server's IP address.
 5. Once complete, your domain should be accessible via HTTP.

@@ -10,7 +10,7 @@
   "blocks": ["994", "212"],
   "evaluate_chars": ["=>", "~>", "~", ">", ">>", "$", "%"],
   "pairing": {
-    "state": false,
+    "state": true,
     "number": 62852258694977,
     "version": [2, 3000, 1019573976]
   }
