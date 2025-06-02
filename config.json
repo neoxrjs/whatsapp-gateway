@@ -1,0 +1,17 @@
+{
+  "owner": "62852258694977",
+  "database": "data",
+  "ram_limit": "1.5gb",
+  "max_upload": 100,
+  "cooldown": 3,
+  "timer": 43200000,
+  "timeout": 180000,
+  "notify_threshold": 5,
+  "blocks": ["994", "212"],
+  "evaluate_chars": ["=>", "~>", "~", ">", ">>", "$", "%"],
+  "pairing": {
+    "state": false,
+    "number": 62852258694977,
+    "version": [2, 3000, 1019573976]
+  }
+}

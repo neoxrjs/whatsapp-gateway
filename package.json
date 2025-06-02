@@ -1,0 +1,38 @@
+{
+   "name": "whatsapp-gateway",
+   "version": "1.0.0",
+   "description": "WhatsApp Gateway is a lightweight Node.js REST API for sending, receiving, and automating WhatsApp messages via the multi-device Web client.",
+   "main": "index.js",
+   "scripts": {
+      "start": "node ."
+   },
+   "author": "Wildan Izzudin",
+   "license": "ISC",
+   "keywords": [
+      "whatsapp",
+      "gateway",
+      "api",
+      "rest",
+      "nodejs",
+      "baileys",
+      "automation",
+      "webhook",
+      "chatbot",
+      "messaging",
+      "whatsapp-api",
+      "whatsapp-gateway",
+      "multi-device",
+      "express"
+   ],
+   "dependencies": {
+      "@adiwajshing/keyed-db": "^0.2.4",
+      "@colors/colors": "^1.6.0",
+      "@database/mongo": "github:neoxr/database#mongo",
+      "@database/sqlite": "github:neoxr/database#sqlite",
+      "@neoxr/baileys": "^8.2.2",
+      "@neoxr/wb": "^5.9.1",
+      "@session/mongo": "github:neoxr/session#mongo",
+      "@session/sqlite": "github:neoxr/session#sqlite",
+      "cfonts": "3.1.1"
+   }
+}
