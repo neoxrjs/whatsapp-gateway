@@ -111,5 +111,5 @@ Each button must include :
 - `text` : Label shown on the button
 - `command` : Text sent back to the bot when clicked
 
-> [!CAUTION]
+> [!WARNING]
 > This project does **not** use the official WhatsApp Business API. It works by WhatsApp Web Socket (multi-device). Using this software may violate WhatsApp's Terms of Service, and could result in your number being **permanently banned**. **Use at your own risk. The author is not responsible for any consequences, including account bans or data loss.**
